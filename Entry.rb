@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Entry
   attr_accessor :id, :title, :content, :tags
 

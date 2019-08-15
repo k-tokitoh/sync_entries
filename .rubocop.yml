@@ -1,0 +1,18 @@
+Style/AlignHash:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+# begin/end/until(while)よりもloop/breakをすすめてくるがメリットが不明のため無効化
+Lint/Loop:
+  Enabled: false
+# 日本語でのコメントを許可する
+Style/AsciiComments:
+  Enabled: false
+MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 45
+Metrics/LineLength:
+  Max: 160
