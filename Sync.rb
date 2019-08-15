@@ -1,4 +1,4 @@
-require 'dotenv/load'
+Bundler.require
 require 'uri'
 require 'net/http'
 require 'rexml/document'
