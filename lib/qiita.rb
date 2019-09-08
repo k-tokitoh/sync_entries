@@ -43,7 +43,7 @@ class Qiita
       req.body = {
         "body":    entry.content,
         "private": false,
-        "tags":    entry.tags.reject { |tag| tag == 'SyncQiita' }.map { |tag| { 'name' => tag } },
+        "tags":    entry.tags.reject { |tag| tag == 'SyncQiita' }.map { |tag| { 'name' => tag.gsub(/[[:space:]]/, '') } },
         "title":   entry.title,
         "tweet":   false
       }.to_json
